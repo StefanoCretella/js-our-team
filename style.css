@@ -1,0 +1,19 @@
+/* nome, cognome, immagine e professione del team */
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Immagine dei membri del team */
+.team-member img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px; 
+}
+  
+/* Grandezza testo mebri del team */
+.team-member .info {
+    font-size: 18px;
+}
+  
