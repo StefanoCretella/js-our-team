@@ -3,7 +3,7 @@ const teamMembers = [
     {
       nome: "Wayne Barnett",
       ruolo: "Founder & CEO",
-      foto: src="img/wayne-barnett-founder-ceo.jpg"
+      foto: "img/wayne-barnett-founder-ceo.jpg"
     },
     {
       nome: "Angela Caroll",
@@ -16,20 +16,20 @@ const teamMembers = [
       foto: "img/walter-gordon-office-manager.jpg"
     },
     {
-        nome: "Angela Lopez",
-        ruolo: "Social Media Manager",
-        foto: "img/angela-lopez-social-media-manager.jpg"
-      },
-      {
-        nome: "Scott Estrada",
-        ruolo: "Developer",
-        foto: "img/scott-estrada-developer.jpg"
-      },
-      {
-        nome: "Barbara Ramos",
-        ruolo: "Graphic Designer",
-        foto: "img/barbara-ramos-graphic-designer.jpg"
-      }
+      nome: "Angela Lopez",
+      ruolo: "Social Media Manager",
+      foto: "img/angela-lopez-social-media-manager.jpg"
+    },
+    {
+      nome: "Scott Estrada",
+      ruolo: "Developer",
+      foto: "img/scott-estrada-developer.jpg"
+    },
+    {
+      nome: "Barbara Ramos",
+      ruolo: "Graphic Designer",
+      foto: "img/barbara-ramos-graphic-designer.jpg"
+    }
   ];
   
   // Funzione per visualizzare i membri del team nella pagina HTML
@@ -52,9 +52,16 @@ const teamMembers = [
       memberDiv.appendChild(infoDiv);
   
       teamContainer.appendChild(memberDiv);
+  
+      // Stampa le informazioni su console
+      console.log("Nome:", member.nome);
+      console.log("Ruolo:", member.ruolo);
+      console.log("Foto:", member.foto);
     });
   }
   
-  // Visualizzare i membri del team nella pagina
-  window.onload = displayTeamMembers;
+  // Visualizzare i membri del team nella pagina e stampare le informazioni su console
+  window.onload = function() {
+    displayTeamMembers();
+  };
   
